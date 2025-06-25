@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍦 Ice Cream Simulator</h1>
+
+    <label for="coneType">Choose Cone:</label>
+    <select id="coneType">
+      <option value="cone">Cone1</option>
+      <option value="cup">Cone2</option>
+      <option value="cup">Cone3</option>
+    </select>
+
+    <label for="flavor">Choose Flavor:</label>
+    <select id="flavor">
+      <option value="vanilla">Vanilla</option>
+      <option value="chocolate">Chocolate</option>
+      <option value="strawberry">Strawberry</option>
+    </select>
+
+    <p>Choose Toppings:</p>
+    <label><input type="checkbox" value="sprinkles"> Sprinkles</label>
+    <label><input type="checkbox" value="strawberry fruit"> Strawberry fruit </label>
+    <label><input type="checkbox" value="blueberry"> Blueberry fruit </label>
+    <label><input type="checkbox" value="cherry fruit"> Cherry fruit </label>
+    <label><input type="checkbox" value="chocolate syrup"> Chocolate syrup </label>
+    <label><input type="checkbox" value="strawberry syrup"> Strawberry syrup </label>
+    
+    <button onclick="generateIceCream()">Make Ice Cream</button>
+
+    <div id="output" class="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
