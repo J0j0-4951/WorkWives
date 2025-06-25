@@ -1,30 +1,74 @@
-/*Center words with font (tempoary)*/
+.Toppings {
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 6px;
+    max-width: 330px;
+    margin: auto;
+}
+
+/* The flexbox holding the frosting buttons */
+.Frosting {
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 6px;
+    max-width: 350px;
+    margin: auto;
+}
+/* The flexbox holding the big ass cupcake */
+.cupcakebuilder {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: auto;
+    max-height: 800px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
+}
+/*Flexbox containing title */
+.Title {
+    background-color: #f6e0a3;
+    padding: 10px;
+    border-radius: 9px;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: rgb(85, 129, 209);
+    font-family: Impact;
+}
+/*Center words with font and background color */
 body {
     font-family: sans-serif;
     text-align: center;
     background-color: rgb(255, 205, 236);
 }
 
-/*icecream parts*/
-.icecream-containter {
+/*cupcake parts*/
+.cupcake-containter {
     position: relative; /*to allow layering*/
     width: 200px;
     margin: 20px auto;
 }
 
-/*CONE*/
-.cone {
+/*cupcake*/
+.cupcake {
     width:100%;
     z-index: 1; /* sends to back layer*/
 }
 
-/*scoops*/
-.scoop {
+/*icing
+.Frosting {
     position: absolute;
     width: 100%;
     left: 0;
-    z-index: 2; /*layer above the cone*/
-}
+    z-index: 2; /*layer above the cupcake*/
+
 
 /*toppings will go here later
 .topping {
@@ -37,3 +81,4 @@ button {
     padding: 10px;
     font-size: 16px;
 }
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cupcake.js"></script>
+    <link rel="stylesheet" href="cupcake.css" />
+    
+</head>
+<body>
+    <div class="Title">
+    <div><h1>Cupcake Decorating</h1></div>
+    </div>
+    <br>
+    <br>
+
+    <div class="cupcakebuilder">
+    <div><img id="cupcakeImage" src="images/EmptyLiner.PNG" height="300"/></div>
+   <form action="/action_page.php">
+    <lable for="Cupcake Flavor">Select Your Flavor:</lable>
+    <select id="CupcakeFlavor" name="cupcakeFlavor" onchange="changeImage()">
+        <option value="EmptyLiner">Select...</option>
+        <option value="VanillaCupcake">Vanilla Cupcake</option>
+        <option value="ChocoCupcake">Chocolate Cupcake</option>
+        <option value="MediumRareCupcake">MediumRareCupcake</option>
+    </select>
+    </form>
+    </div>
+
+
+<br>
+    <div class="Frosting">
+        <div><button type="button">
+            <img src="/images/PinkFrosting.PNG" id="PinkFrosting" height="60">
+        </button></div>
+
+        <div><button type="button">
+        <img src="/images/BlueFrosting.PNG" id="BlueFrosting" height="60">
+        </button></div>
+
+        <div><button type="button">
+        <img src="/images/OrangeFrosting.PNG" id="OrangeFrosting" height="60">
+        </button></div>
+    </div>
+    </div>
+    <br>
+
+    <div class="Toppings">
+        <div><button type="button">
+            <img src="/images/Blueberries.PNG" height="60">
+        </button></div>
+
+        <div><button type="button">
+        <img src="/images/CherryWaffer.PNG" height="60">
+        </button></div>
+
+        <div><button type="button">
+        <img src="/images/Chocolate2.PNG" height="60">
+        </button></div>
+    </div>
+
+</body>
+</html>

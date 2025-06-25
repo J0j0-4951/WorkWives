@@ -1,21 +1,48 @@
-const scoops = {
-    Strawberry: document.querySelector('#scoop-strawberry'),
-    Green: document.querySelector('#scoop-Green'),
-    Chocolate: document.querySelector('#scoop-chocolate'),
-};
-const buttons = {
-    Strawberry: document.getElementById('btn-strawberry'),
-    Green: document.getElementById('btn-Green'),
-    Chocolate: document.getElementById('btn-Chocolate'),
-};
 
-const counters = {
-    Strawberry: 0,
-    Green: 0,
-    Chocolate: 0,
-};
+//changes cupcake based on the selected value
+function changeImage() {
 
-buttons.Strawberry.addEventListener('click', () => {
-    let Strawberry =+1;
-    
-});
+const selectedVaule = document.getElementById('CupcakeFlavor').value;
+const images = document.getElementById('cupcakeImage');
+
+   if (selectedVaule === 'EmptyLiner')
+    {cupcakeImage.src = 'images/EmptyLiner.PNG';}
+
+     else if (selectedVaule === 'MediumRareCupcake')
+
+        {cupcakeImage.src = 'images/MediumRareCupcake.PNG';}
+
+            else if (selectedVaule === 'ChocoCupcake')
+                {cupcakeImage.src = 'images/ChocoCupcake.PNG';  }
+
+            else if (selectedVaule === 'VanillaCupcake')
+
+        {cupcakeImage.src = 'images/VanillaCupcake.PNG';}
+
+   
+}
+
+
+//buttons
+
+function addImage() {
+
+const selectedVaule = document.getElementById('PinkFrosting').value;
+const images = document.getElementById('cupcakeImage');
+
+   if (selectedVaule === 'EmptyLiner')
+    {cupcakeImage.src = 'images/EmptyLiner.PNG';}
+
+     else if (selectedVaule === 'MediumRareCupcake')
+
+        {cupcakeImage.src = 'images/MediumRareCupcake.PNG';}
+
+            else if (selectedVaule === 'ChocoCupcake')
+                {cupcakeImage.src = 'images/ChocoCupcake.PNG';  }
+
+            else if (selectedVaule === 'VanillaCupcake')
+
+        {cupcakeImage.src = 'images/VanillaCupcake.PNG';}
+
+
+}
