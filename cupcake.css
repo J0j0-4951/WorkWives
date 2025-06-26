@@ -1,23 +1,26 @@
-.Toppings {
-    display: flex;
-    flex-direction: row;
-    background-color: #f1f1f1;
-    padding: 5px;
-    border-radius: 6px;
-    max-width: 330px;
-    margin: auto;
+.cupcake-containter {
+    position: relative;
+    width: fit-content;
+}
+.cupcake-containter img {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-/* The flexbox holding the frosting buttons */
-.Frosting {
-    display: flex;
-    flex-direction: row;
-    background-color: #f1f1f1;
-    padding: 5px;
-    border-radius: 6px;
-    max-width: 350px;
-    margin: auto;
+#cupcakeImage {
+    z-index: 1;
 }
+
+#frostingImage {
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+
+
+
 /* The flexbox holding the big ass cupcake */
 .cupcakebuilder {
     background-color: #f1f1f1;
@@ -60,25 +63,5 @@ body {
 .cupcake {
     width:100%;
     z-index: 1; /* sends to back layer*/
-}
-
-/*icing
-.Frosting {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    z-index: 2; /*layer above the cupcake*/
-
-
-/*toppings will go here later
-.topping {
-
-}
-*/
-
-button {
-    margin: 5px;
-    padding: 10px;
-    font-size: 16px;
 }
 
