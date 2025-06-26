@@ -24,7 +24,7 @@ const images = document.getElementById('cupcakeImage');
 
 
 //buttons
-
+//frosting
 function addPinkFrosting(color) {
     const frostingImage = document.getElementById("pinkFrostingImage");
 
@@ -32,6 +32,7 @@ function addPinkFrosting(color) {
         frostingImage.src = 'images/PinkFrosting.PNG';
 
         frostingImage.style.display = 'block';
+      
     }
 }
 
@@ -53,3 +54,35 @@ function addPinkFrosting(color) {
     }
         frostingImage.style.display = 'block';
     }
+//toppings
+    function addBlueberries(color) {
+  const toppingImage = document.getElementById("blueberry");
+
+    if (color === 'Blueberries') {
+        toppingImage.src = 'images/Blueberries.PNG';
+    }
+        toppingImage.style.display = 'block';
+    }
+
+
+     function addCherryWaffer(color) {
+
+          const toppingImage = document.getElementById("cherrywaffer");
+
+    if (color === 'CherryWaffer') {
+        toppingImage.src = 'images/CherryWaffer.PNG';
+    }
+        toppingImage.style.display = 'block';
+    }
+        
+     function addChocolate2(color) {
+
+          const toppingImage = document.getElementById("chocolate");
+
+    if (color === 'Chocolate2') {
+        toppingImage.src = 'images/Chocolate2.PNG';
+    }
+       toppingImage.style.display = 'block';
+    }
+        
+    
