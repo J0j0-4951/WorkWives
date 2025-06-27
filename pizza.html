@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Build a Pizza</title>
+  <link rel="stylesheet" href="pizza.css">
+  <script src="pizza.js"></script>
+</head>
+<body>
+  <h1 id=header>Build Your Pizza!</h1>
+  <div id="pizza-builder">
+    <div id="pizza-base">
+      <img src="pizza-images/dough.png" id="pizza-dough">
+    </div>
+  <div id="ingredients">
+      <button onclick="addIngredient('sauce')">Sauce</button>
+      <button onclick="addIngredient('cheese')">Cheese</button>
+      <button onclick="addIngredient('pepperoni')">Pepperoni</button>
+      <button onclick="addIngredient('mushrooms')">Mushrooms</button>
+      <button onclick="addIngredient('peppers')">Peppers</button>
+      <button onclick="addIngredient('pineapples')">Pineapples</button>
+  </div>
+    <button onclick="resetPizza()">Reset Pizza</button>
+    </div>
+</body>
+</html>

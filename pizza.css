@@ -1,0 +1,60 @@
+body {
+  font-family: 'Lucida Sans Unicode';
+  text-align: center;
+  background-image: url("pizza-images/pizza-background.png");
+}
+
+#pizza-builder {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#pizza-base {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 20px;
+}
+
+#pizza-base img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.topping {
+    transform: scale(0.8);
+    z-index: 1;
+}
+
+#ingredients button,
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular';
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ffb74d;
+  border-radius: 8px;
+ 
+}
+
+#ingredients button:hover,
+  button:hover {
+  background-color: #ff9e0b;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular';
+  transition: background-color 0.3s;
+}
+
+h1 {
+  width: fit-content;
+  background-color: #ffb74d;
+  padding: 10px;
+  font-size: 35px;
+  border-radius: 8px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+  text-align: center;
+  margin: 0 auto;
+}
