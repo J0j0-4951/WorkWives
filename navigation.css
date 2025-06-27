@@ -6,7 +6,7 @@
     left: -250px;
     background-color: rgb(205, 180, 219);
     overflow-x: hidden;
-    z-index: 2;
+    z-index: 200;
     padding-top: 60px;
     transition: 1s;
     border-style: solid;
@@ -34,7 +34,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index:1;
+    z-index:100;
     background-color:black;
     opacity: 40%;
 }
@@ -52,6 +52,7 @@
     transition: .5s;
     -webkit-text-stroke: 1.5px black;
     border-width: 5px;
+    width: 96px;
 }
 
 #openNavigation:hover{
