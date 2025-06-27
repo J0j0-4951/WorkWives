@@ -1,12 +1,12 @@
-function chooseOption(){
-    startButton.style.top = "-100%";
-    startingBackground.style.top = "0";
+function openNavigationBar(){
+    navigationChoices.style.left = "0px";
+    navigationOverlay.style.display = "block";
 };
 
-function goingBack(){
-    startButton.style.top = "0";
-    startingBackground.style.top ="200%";
+function closeNavigationBar(){
+    navigationChoices.style.left = "-250px";
+    navigationOverlay.style.display = "none";
 }
 
-document.getElementById('actualStartButton').addEventListener('click',chooseOption);
-document.getElementById('startingBackground').addEventListener('click', goingBack);
+document.getElementById('openNavigation').addEventListener('click',openNavigationBar);
+document.getElementById('navigationOverlay').addEventListener('click',closeNavigationBar);
