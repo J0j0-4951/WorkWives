@@ -1,71 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="cupcake.js"></script>
-    <link rel="stylesheet" href="cupcake.css" />
-    <styles= background-image src="images/background.png"></styles>
-    <title>Cupcakes</title>
-    <link rel="icon" src="cupcakeicon-png.webp" type="image/x-icon">
+    <link rel="stylesheet" href="start.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="start.js" defer></script>
+    <title>Welcome!</title>
 </head>
 <body>
-    <div class="flexbox-top">
- <div class="Title">
-    <div><h1>Cupcake Decorating</h1></div>
-    </div>
-</div>    <div class="pmove">
-    </div>
-
-    
-    <div></div>
-    <br>
-    <br>
-
-    <div class="cupcakebuilder">
-    <div><img id="cupcakeImage" src="images/EmptyLiner.PNG" height="300"/></div>
-    <p>For best results do not resize window</p>
-   <form action="/action_page.php">
-    <lable for="Cupcake Flavor">Select Your Flavor:</lable>
-    <select id="CupcakeFlavor" name="cupcakeFlavor" onchange="changeImage()">
-        <option value="EmptyLiner">Select...</option>
-        <option value="VanillaCupcake">Vanilla Cupcake</option>
-        <option value="ChocoCupcake">Chocolate Cupcake</option>
-        <option value="MediumRareCupcake">MediumRareCupcake</option>
-    </select>
-    </form>
+    <div id="startButton">
+        <h1>Work Wives</h1>
+        <h2>Food Builder!</h2>
+        <button id="actualStartButton">Start?</button>
+        <img id="cookingMama" src="https://www.pinclipart.com/picdir/big/417-4178892_cookingmama-cooking-mama-freetoedit-cooking-mama-png-clipart.png">
+        <img id="cupcake" src="https://static.vecteezy.com/system/resources/previews/019/606/495/original/cupcake-graphic-clipart-design-free-png.png">
+        <img id="icecream" src="https://easydrawingguides.com/wp-content/uploads/2018/10/Ice-Cream-10.png">
+        <img id="pizza" src="https://www.freeiconspng.com/uploads/pizza-png-4.png">
     </div>
 
+    <div id="startingBackground">
 
-<br>
-    <div class="frosting" id="frostingImage">
-        <img id="pinkFrostingImage" img src="/images/PinkFrosting.PNG"height="60" style="display: none; position: absolute;"/>
-        <img id="blueFrostingImage" img src="/images/BlueFrosting.PNG"height="60" style="display: none; position: absolute;"/> 
-        <img id="orangeFrostingImage" img src="/images/OrangeFrosting.PNG"height="60" style="display: none; position: absolute;"/>
-    </div>
-        <div><button onclick="addPinkFrosting('PinkFrosting')"><img src="/images/PinkFrosting.PNG" height="60"></button>
-        <button onclick="addBlueFrosting('BlueFrosting')"><img src="/images/BlueFrosting.PNG" height="60"></button>
-        <button onclick="addOrangeFrosting('OrangeFrosting')"><img src="/images/OrangeFrosting.PNG" height="60"></button></div>
-        
-    <br>
-
-    <div class="Toppings" id = "toppingImage">
-        <img id = "blueberry" src="/images/Blueberries.PNG" height="60" style="display: none; position: absolute;"/>
-        <img id = "cherrywaffer" src="/images/CherryWaffer.PNG" height="60" style="display: none; position: absolute;"/>
-        <img id = "chocolate" src="/images/Chocolate2.PNG" height="60" style="display: none; position: absolute;"/>
-    </div>
-        <button onclick="addBlueberries('Blueberries')"><img src="/images/Blueberries.PNG" height="60"></button>
-        <button onclick="addCherryWaffer('CherryWaffer')"><img src="/images/CherryWaffer.PNG" height="60"></button>
-        <button onclick="addChocolate2('Chocolate2')"><img src="/images/Chocolate2.PNG" height="60"></button>
+        <div id="startingChoices">
+            <h1>Select Your Gamemode</h1>
+            <a href="cupcake.html">Cupcake</a><br>
+            <a href="">Icecream</a><br>
+            <a href="">Pizza</a><br>
         </div>
-    <br>
-<br>
-<br>
-<br>
-<div class="flexbox-bottom">
-<div> </div>
 
-</div>
+    </div>
 </body>
-
 </html>
