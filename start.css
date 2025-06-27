@@ -1,0 +1,239 @@
+html, body{
+    height: 100%;
+    margin:0;
+}
+
+body{
+    background-color: rgb(205, 180, 219);
+}
+
+#startButton h1 {
+    position: absolute;
+    top: 20px;
+    font-size: 100px;
+    font-family: "Shadows Into Light", cursive;
+    -webkit-text-stroke: 1px;
+    z-index: 10;
+    color: rgb(162, 210, 255);
+    text-shadow: 2px 2px 9px black;
+}
+
+#startButton h2:hover {
+    animation: zoom 5s linear;
+}
+
+#startButton h2 {
+    position: absolute;
+    font-family: "Permanent Marker", cursive;
+    top: 250px;
+    font-size: 50px;
+    animation: bounce 1.5s infinite;
+    color: rgb(162, 210, 255);
+    -webkit-text-stroke: 1px black;
+    z-index: 10;
+}
+
+#cookingMama{
+    position: fixed;
+    top: 420px;
+    right: 0px;
+    height: 600px;
+    animation: periodicZoom 2.5s infinite;
+}
+
+#cupcake{
+    position: fixed;
+    height: 190px;
+    animation: smallBobbing 3s infinite;
+    top: 80px;
+    right: 60px;
+}
+
+#icecream{
+    position: fixed;
+    height: 360px;
+    top: 100px;
+    left: -70px;
+    animation: smallBobbing 3.2s infinite;
+}
+
+#pizza{
+    position: fixed;
+    height: 230px;
+    top: 600px;
+    left: 35px;
+    animation: periodicZoom 2.5s infinite;
+}
+
+#actualStartButton {
+  transition: 0.3s;
+  box-shadow: 6px 6px 18px black;
+  text-shadow: 3px 2px 0px black;
+  color: rgb(255 175 204);
+  background-color: rgb(162 210 255);
+  transform:perspective(500px) rotateY(-20deg);
+  font-size: 50px;
+  margin: 0;
+  cursor: pointer;
+  padding: 5px 40px;
+  font-family: fantasy;
+  position: absolute;
+  top: 480px;
+}
+
+@keyframes smallBobbing{
+    0%,50%, 100%{
+        transform: none;
+    }
+    25%{
+        transform: rotateZ(10deg);
+    }
+    75%{
+        transform: rotateZ(-10deg);
+    }
+}
+
+@keyframes periodicZoom{
+    0%,100%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes bounce{
+    0%,50%, 100%{
+        transform: scale(1.2);
+        text-shadow: 0 12px 35px black;
+    }
+    25%{
+        transform: rotateZ(10deg);
+        text-shadow: 0 2px 10px black;
+    }
+    75%{
+        transform: rotateZ(-10deg);
+        text-shadow: 0 2px 10px black;
+    }
+}
+
+#actualStartButton:hover{
+  /*color: black;
+  background-color: white;*/
+  transform:perspective(500px) rotateY(20deg);
+  box-shadow: -6px 6px 18px black;
+  text-shadow: -3px 2px 0px black;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+        text-shadow: 0 2px 5px black;
+    }
+    10%{
+        transform: scale(1.2);
+        text-shadow: 0 2px 5px black;
+    }
+    20%{
+        transform: scale(1.4);
+        text-shadow: 0 2px 5px black;
+    }
+    30%{
+        transform: scale(1.6);
+        text-shadow: 0 2px 5px black;
+    }
+    40%{
+        transform: scale(1.8);
+        text-shadow: 0 2px 5px black;
+    }
+    50%{
+        transform: scale(2);
+        text-shadow: 0 2px 5px black;
+    }
+    60%{
+        transform: scale(2.2);
+        text-shadow: 0 2px 5px black;
+    }
+    70%{
+        transform: scale(2.4);
+        text-shadow: 0 2px 5px black;
+    }
+    80%{
+        transform: scale(2.6);
+        text-shadow: 0 2px 5px black;
+    }
+    90%{
+        transform: scale(2.8);
+        text-shadow: 0 2px 5px black;
+    }
+    100%{
+        transform: scale(3);
+        text-shadow: 0 2px 5px black;
+    }
+}
+
+#startButton {
+    display: flex;
+    flex-wrap: wrap;
+    position:fixed;
+    top:0;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+#startingBackground {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0,0.25);
+    top: 100%;
+    transition: 1s;
+    z-index: 7;
+}
+
+#startingChoices{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    text-align: center;
+    flex-direction: column;
+    height: 60%;
+    width: 60%;
+    z-index: 9;
+    
+}
+
+#startingChoices h1{
+    font-size: 50px;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: rgb(162, 210, 255);
+    text-shadow: 2px 3px 9px black;
+}
+
+#startingChoices a{
+    display: block;
+    padding: 10px;
+    font-size: 40px;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: black;
+    border-width: 3px;
+    color: white;
+    background-color: rgb(189, 224, 254, 0.50);
+    transition: 0.5s;
+    text-shadow: 2px 2px 6px black;
+}
+
+#startingChoices a:hover{
+    background-color: rgb(205, 180, 219);
+    color: rgb(162, 210, 255);
+}
