@@ -1,0 +1,136 @@
+body { /*visuals for text*/
+  font-family: papyrus;
+  background-color: pink;
+  text-align: center;
+  padding: 20px;
+}
+
+.container { /*appearance for container*/
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+select, button { /*appearance for buttons*/
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+button { /*visuals for buttons*/
+  background-color: #ffb6b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover { /*When hovering over the makieicecream button or the reset button, the box turns the color inputted*/
+  background-color: #ff8c8c;
+}
+
+.ice-cream-visual {
+  margin-top: 20px;
+  min-height: 250px;
+}
+
+.ice-cream-visual img {
+  max-width: 120px;
+  display: block;
+  margin: 0 auto 5px;
+}
+button {
+  transition: background-color 0.3s ease;
+}
+
+/**/
+.ice-cream-visual {
+  top: 30px;
+  position: relative;
+  width: 250px; /* Adjust size to fit your image scale */
+  height: 150px;
+  margin: 20px auto;
+}
+
+.ice-cream-visual img { /*positioned icecream images*/
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100px;
+}
+
+.ice-cream-visual img:not([src$="Cone1.png"]):not([src$="Cone2.png"]):not([src$="Cone3.png"])
+{
+  position: relative; /*Positioned everything but the cones*/
+  top: -50px;
+  left: 50px;
+}
+
+.ice-cream-visual img[src$="Blueberry.png"]/*Fixed the position of the blueberry topping*/
+{
+  position: relative !important;
+  top: -160px !important; 
+  left: 10px !important;
+}
+
+.ice-cream-visual img[src$="Cherry.png"] /*Fixed the position of the cherry topping*/
+{
+  position: relative !important;
+  top: -190px !important;
+  right: 150px !important;
+  left: 19px !important;
+}
+
+.ice-cream-visual img[src$="Strawberry-syrup.png"]/*Fixed the position of the strawberry-syrup topping*/
+{
+  position: relative !important;
+  top: -155px !important;
+  right: 160px !important;
+  left: 43px !important;
+}
+.ice-cream-visual img[src$="Chocolate-syrup.png"] /*Fixed the position of the chocolate-syrup topping*/
+{
+  position: relative !important;
+  top: -155px !important;
+  right: 160px !important;
+  left: 43px !important;
+}
+.ice-cream-visual img[src$="Sprinkles.png"]/*Fixed the position of the sprinkles topping*/
+{
+  position: relative !important;
+  top: -155px !important;
+  right: 160px !important;
+  left: 43px !important;
+}
+.ice-cream-visual img[src$="Strawberry-fruit.png"] /*Fixed the position of the strawberry-fruit topping*/
+{
+  position: relative !important;
+  top: -160px !important;
+  left: 20px !important;
+}
+
+
+/*
+.ice-cream-visual img:not([src$="Sprinkles.png"]):not([src$="Strawberry-fruit.png"]):not([src$="Strawberry-syrup.png"])
+{
+  position: relative;
+  top: -50px;
+  left: 45px;
+}
+.ice-cream-visual img:not([src$="Cherry.png"]):not([src$="Blueberry.png"]):not([src$="Chocolate-syrup.png"])
+{
+  position: relative;
+  top: -50px;
+  left: 45px;
+}
+*/
+
+/*
+.ice-cream-visual img[src$="Strawberry.png"]
+.ice-cream-visual img[src$="Vanilla.png"]
+.ice-cream-visual img[src$="Chocolate.png"]
+*/
