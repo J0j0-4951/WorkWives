@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="icecream.css">
+  <!--Links to the Navigation styles-->
+    <link rel="stylesheet" href="navigation.css">
+    <script src="navigation.js" defer></script>
+    <!--End-->
 </head>
 <body>
   <div class="container">
@@ -41,4 +45,17 @@
   </div>
 
   <script src="icecream.js"></script>
+  
+  <!--The Navigation Code-->
+ <button id="openNavigation">☰</button>
+
+    <div id="navigationChoices">
+        <a href="cupcake.html">Cupcake</a>
+        <a href="icecream.html">Icecream</a>
+        <a href="pizza.html">Pizza</a>
+        <a id="return" href="index.html">Start Screen</a>
+    </div>
+
+    <div id="navigationOverlay"></div>
+<!--Navigation Code End-->
   </body>
