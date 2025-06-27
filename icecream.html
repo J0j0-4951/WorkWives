@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="icecream.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍦 Making Ice Cream</h1>
+
+    <label for="containerType">Choose Cone:</label>
+    <select id="containerType">
+      <option value="Cone1">Cone1</option>
+      <option value="Cone2">Cone2</option>
+      <option value="Cone3">Cone3</option>
+    </select>
+
+    <label for="flavor">Choose Flavor:</label>
+    <select id="flavor">
+      <option value="Vanilla">Vanilla</option>
+      <option value="Chocolate">Chocolate</option>
+      <option value="Strawberry">Strawberry</option>
+    </select>
+
+    <label for="toppings">Choose Toppings:</label>
+    <p style="color: red;">ONLY ONE!!!</p>
+
+    <div id="toppings"></div>
+    <label><input type="checkbox" value="Sprinkles"> Sprinkles</label>
+    <label><input type="checkbox" value="Strawberry-fruit"> Strawberry-fruit </label>
+    <label><input type="checkbox" value="Blueberry"> Blueberry </label>
+    <label><input type="checkbox" value="Cherry"> Cherry </label>
+    <label><input type="checkbox" value="Chocolate-syrup"> Chocolate-syrup </label>
+    <label><input type="checkbox" value="Strawberry-syrup"> Strawberry-syrup </label>
+    
+   <button id="makeBtn">Make Ice Cream</button>
+   <button id="resetBtn">Reset</button>
+
+ <div id="iceCreamVisual" class="ice-cream-visual"></div>
+  </div>
+
+  <script src="icecream.js"></script>
+  </body>
