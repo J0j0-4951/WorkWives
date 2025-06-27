@@ -1,0 +1,198 @@
+.cupcake-containter {
+    position: relative;
+    width: fit-content;
+}
+.cupcake-containter img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#cupcakeImage {
+    z-index: 1;
+}
+
+#blueberry  {
+    z-index: 2;
+    position: absolute;
+    top: 36%;
+    left: 46%;
+    transform: translate(-50%, 0);
+    width: 8%;
+    height: auto;
+    margin: auto;
+}
+
+    #cherrywaffer {
+    z-index: 3;
+    position: absolute;
+    top: 25%;
+    left: 53%;
+    transform: translate(-50%, 0);
+    width: 16%;
+    height: auto;
+    margin: auto;
+}
+
+  #chocolate {
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(-50%, 0);
+    width: 8%;
+    height: auto;
+    margin: auto;
+}
+
+#pinkFrostingImage, #blueFrostingImage, #orangeFrostingImage {
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 17%;
+    height: auto;
+    margin: auto;
+
+    /*
+    top: 120px;
+    margin-top: 120px;
+    left: 366px;
+    margin-left: 366px;
+    */
+}
+
+/* The flexbox holding the big ass cupcake */
+.cupcakebuilder {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: auto;
+    max-height: 800px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
+    font-family: MV Boli;
+    color: rgb(124, 32, 32);
+}
+/*Flexbox containing title */
+.Title {
+    display: flex;
+    padding: 15px;
+    border-radius: 9px;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(249, 255, 235, 0);
+      align-items: center;
+}
+
+.Title > div {
+    display: flex;
+  background-color: #ededed;
+  padding: 0px;
+  font-size: 15px;
+  border-radius: 10px;
+  align-items: center;
+width: 900px;
+margin: auto;
+justify-content: center;
+
+
+}
+
+h1 {
+    color: rgb(121, 7, 7);
+    font-family: MV Boli;
+    
+}
+
+
+
+.pmove
+{
+    display: flex;
+    text-align: center;
+    margin: 20px auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pmove p
+{
+        
+            display:flex;
+    font-family: MV Boli;
+    color: brown;
+    margin-top: 10px;
+}
+
+
+/*Center words with font and background color */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*cupcake parts*/
+.cupcake-containter {
+    position: relative; /*to allow layering*/
+    width: 200px;
+    margin: 20px auto;
+}
+
+/*cupcake*/
+.cupcake {
+    width:100%;
+    z-index: 1; /* sends to back layer*/
+}
+
+
+/* From Uiverse.io by aasisodiya */ 
+button {
+ background-color: #eee;
+ border: none;
+ padding: 1rem;
+ font-size: 1rem;
+ width: 10em;
+ border-radius: 1rem;
+ color: rgb(255, 216, 143);
+ box-shadow: 0 0.4rem #ffcccc;
+ cursor: pointer;
+}
+
+button:active {
+ color: rgb(245, 180, 180);
+ box-shadow: 0 0.2rem #ffcfe5;
+ transform: translateY(0.2rem);
+}
+
+button:hover:not(:disabled) {
+ background: rgb(255, 226, 226);
+ color: white;
+ text-shadow: 0 0.1rem #bcb4b4;
+}
+
+button:disabled {
+ cursor: auto;
+ color: grey;
+}
+
+.flexbox-bottom {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #ffcccc;
+  padding: 60px;
+  border-radius: 5px;
+}
+
+.flexbox-top {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(255, 204, 204);
+  padding: 20px;
+  border-radius: 5px;
+  
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cupcake.js"></script>
+    <link rel="stylesheet" href="cupcake.css" />
+    <styles= background-image src="images/background.png"></styles>
+    <title>Cupcakes</title>
+    <link rel="icon" src="cupcakeicon-png.webp" type="image/x-icon">
+    <!--Links to the Navigation styles-->
+    <link rel="stylesheet" href="navigation.css">
+    <script src="navigation.js" defer></script>
+    <!--End-->
+</head>
+<body>
+    <div class="flexbox-top">
+ <div class="Title">
+    <div><h1>Cupcake Decorating</h1></div>
+    </div>
+</div>    <div class="pmove">
+    </div>
+
+    
+    <div></div>
+    <br>
+    <br>
+
+    <div class="cupcakebuilder">
+    <div><img id="cupcakeImage" src="images/EmptyLiner.PNG" height="300"/></div>
+    <p>For best results do not resize window</p>
+   <form action="/action_page.php">
+    <lable for="Cupcake Flavor">Select Your Flavor:</lable>
+    <select id="CupcakeFlavor" name="cupcakeFlavor" onchange="changeImage()">
+        <option value="EmptyLiner">Select...</option>
+        <option value="VanillaCupcake">Vanilla Cupcake</option>
+        <option value="ChocoCupcake">Chocolate Cupcake</option>
+        <option value="MediumRareCupcake">MediumRareCupcake</option>
+    </select>
+    </form>
+    </div>
+
+
+<br>
+    <div class="frosting" id="frostingImage">
+        <img id="pinkFrostingImage" img src="images/PinkFrosting.PNG"height="60" style="display: none; position: absolute;"/>
+        <img id="blueFrostingImage" img src="images/BlueFrosting.PNG"height="60" style="display: none; position: absolute;"/> 
+        <img id="orangeFrostingImage" img src="images/OrangeFrosting.PNG"height="60" style="display: none; position: absolute;"/>
+    </div>
+        <div><button onclick="addPinkFrosting('PinkFrosting')"><img src="images/PinkFrosting.PNG" height="60"></button>
+        <button onclick="addBlueFrosting('BlueFrosting')"><img src="images/BlueFrosting.PNG" height="60"></button>
+        <button onclick="addOrangeFrosting('OrangeFrosting')"><img src="images/OrangeFrosting.PNG" height="60"></button></div>
+        
+    <br>
+
+    <div class="Toppings" id = "toppingImage">
+        <img id = "blueberry" src="images/Blueberries.PNG" height="60" style="display: none; position: absolute;"/>
+        <img id = "cherrywaffer" src="images/CherryWaffer.PNG" height="60" style="display: none; position: absolute;"/>
+        <img id = "chocolate" src="images/Chocolate2.PNG" height="60" style="display: none; position: absolute;"/>
+    </div>
+        <button onclick="addBlueberries('Blueberries')"><img src="images/Blueberries.PNG" height="60"></button>
+        <button onclick="addCherryWaffer('CherryWaffer')"><img src="images/CherryWaffer.PNG" height="60"></button>
+        <button onclick="addChocolate2('Chocolate2')"><img src="images/Chocolate2.PNG" height="60"></button>
+        </div>
+    <br>
+<br>
+<br>
+<br>
+<div class="flexbox-bottom">
+<div> </div>
+
+</div>
+
+<!--The Navigation Code-->
+ <button id="openNavigation">☰</button>
+
+    <div id="navigationChoices">
+        <a href="cupcake.html">Cupcake</a>
+        <a href="">Icecream</a>
+        <a href="">Pizza</a>
+        <a id="return" href="index.html">Start Screen</a>
+    </div>
+
+    <div id="navigationOverlay"></div>
+<!--Navigation Code End-->
+</body>
+
+</html>
